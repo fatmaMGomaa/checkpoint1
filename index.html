@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Reading List</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="readingList.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">reading list</a></h1>
+            <label><img src="search.png"><input type="search" id="search-text"></label>
+        </header>
+
+        <div id="main-container">
+            <form method="POST" action="fatma-mohamed@feps.edu.eg" id="adding-book">
+                <label>Book Name: <input type="text" required name="bookName"></label>
+                <label>category: <input type="text" required name="bookCategory"></label>
+                <label>Book image url: <input type="url" name="bookImage"></label>
+                <button id="submit-book">add Book</button>
+            </form>
+
+            <ul class="filter">
+                <li><button class="filter__read">read</button></li>
+                <li><button class="filter__reading">reading</button></li>
+                <li><button class="filter__willRead">will read</button></li>
+            </ul>
+
+            <div class="books-container">
+                
+            </div>
+        </div>
+        <script src="uuidv4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+        <script src="functions.js"></script>
+        <script src="readingList.js"></script>
+    </body>
+</html>
